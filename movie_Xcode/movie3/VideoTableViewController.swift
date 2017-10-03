@@ -26,7 +26,7 @@ class VideoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        self.refreshControl = refreshControl
+//        self.refreshControl = refreshControl
         let listUrl = "http://localhost:3000/articles.json";
         Alamofire.request(listUrl).responseJSON{ response in
             let json = JSON(response.result.value ?? 0)
