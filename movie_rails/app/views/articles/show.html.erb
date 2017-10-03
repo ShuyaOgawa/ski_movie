@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>名前:</strong>
+  <%= @article.title %>
+</p>
+
+
+<p>
+  <%= link_to @article.video_url.to_s do %>
+      <%= image_tag(@article.video_url(:screenshot).to_s, id: "video", :alt => "screenshot") %>
+  <% end %>
+</p>
+
+
+<%= link_to 'ファイル修正', edit_article_path(@article) %> |
+<%= link_to '戻る', articles_path %>
