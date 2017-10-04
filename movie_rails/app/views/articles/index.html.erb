@@ -17,7 +17,7 @@
         <td><%= article.title %></td>
         <!-- <td><%= article.video %></td> -->
         <td><%= link_to '動画を見る', article %></td>
-        <td><%= link_to 'ファイル修正', edit_article_path(article) %></td>
+        <td><%= link_to 'ファイル変更', edit_article_path(article) %></td>
         <td><%= link_to '削除', article, method: :delete, data: { confirm: 'このファイルを削除しますか？' } %></td>
       </tr>
     <% end %>
